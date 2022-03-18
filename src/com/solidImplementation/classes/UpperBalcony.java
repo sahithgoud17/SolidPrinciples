@@ -1,6 +1,6 @@
 package com.solidImplementation.classes;
 import com.solidImplementation.interfaces.*;
-class UpperBalcony implements Theatre , GiftVoucher
+public class UpperBalcony implements Theatre , GiftVoucher
 {
     @Override
     public void ticketInfo()
