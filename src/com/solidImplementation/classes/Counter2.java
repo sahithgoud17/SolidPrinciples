@@ -1,11 +1,21 @@
 package com.solidImplementation.classes;
 
 
-class Counter2
+import com.solidImplementation.interfaces.AbstractFactory;
+
+class Counter2 implements AbstractFactory
 {
-    public LowerBalcony getTicket2(String getTick)
+    public UpperBalcony getUpperBalcony(String getTicket)
     {
-        if(getTick.equalsIgnoreCase("i need lowerbalcony ticket"))
+        return null;
+    }
+    public LowClass getLowClass(String getTicket)
+    {
+        return null;
+    }
+    public LowerBalcony getLowerBalcony(String getTicket)
+    {
+        if(getTicket.equalsIgnoreCase("i need lower balcony ticket"))
             return new LowerBalcony();
         else
             return null;
